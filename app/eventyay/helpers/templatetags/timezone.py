@@ -2,6 +2,7 @@ from django import template
 
 from eventyay.helpers.timezone import format_timezone_name
 
+
 register = template.Library()
 
 
