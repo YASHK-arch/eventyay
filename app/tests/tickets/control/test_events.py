@@ -555,6 +555,7 @@ class EventsTest(SoupTest):
         assert doc.select_one(f'label[for="{region_select["id"]}"]').get_text(strip=True) == 'Region'
         assert doc.select_one(f'label[for="{timezone_output["id"]}"]').get_text(strip=True) == 'Timezone'
         assert timezone_output['data-region-timezone-source'] == region_select['id']
+        assert timezone_output['data-region-timezone-date-source'] == 'id_date_from_0'
         assert doc.select_one('script[src$="eventyay-common/js/ui/region-timezone-display.js"]')
 
     def test_settings_timezone(self):

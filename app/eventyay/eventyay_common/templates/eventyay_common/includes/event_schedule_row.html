@@ -31,7 +31,8 @@
                     <output id="{{ timezone_form.id_for_label }}-display"
                             class="form-control-static region-timezone-display"
                             data-region-timezone-display
-                            data-region-timezone-source="{{ timezone_form.id_for_label }}">{{ timezone_form.value|timezone_display }}</output>
+                            data-region-timezone-source="{{ timezone_form.id_for_label }}"
+                            data-region-timezone-date-source="{{ date_from_form.id_for_label }}">{{ timezone_form.value|timezone_display }}</output>
                 </div>
             {% endif %}
         </div>
