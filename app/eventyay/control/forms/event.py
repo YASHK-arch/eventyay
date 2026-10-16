@@ -204,7 +204,7 @@ class EventWizardBasicsForm(I18nModelForm):
     }
     timezone = forms.ChoiceField(
         choices=((a, format_timezone_name(a)) for a in common_timezones),
-        label=_('Region'),
+        label=_('Event timezone'),
     )
     locale = forms.ChoiceField(
         choices=settings.LANGUAGES,
